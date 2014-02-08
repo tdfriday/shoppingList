@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<meta charset="utf-8">
+<title> </title>
+<link rel="stylesheet" href="list.css" type="text/css" />
+
+</head>﻿
+<body>
+<div class="header"><h1>The Shopping List</h1></div>
+<hr>
+<div>
+<form>
+	<p>Add an item: <input id="newItem" type="text">
+	<input id="submit" type="submit"></p>
+	<button>Remove checked items</button>
+	<button>Remove all items</button>
+</form>
+</div><hr>
+<div>
+<p>Check items to mark completed</p>
+<p>click <button>x</button> to delete an item</p>
+<ul class="addItems">
+	<li class="items"><button>x</button>Buy something<input class="checkBox" type="checkbox" name="remove"></li>
+	<li class="items"><button>x</button>Buy something else<input class="checkBox" type="checkbox" name="remove"></li>
+	<li class="items"><button>x</button>more stuff<input class="checkBox" type="checkbox" name="remove"></li>
+</ul>
+</div>
+
+<script type="text/javascript" src="list.js"></script>	
+</body>
+</html>

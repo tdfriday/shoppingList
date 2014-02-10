@@ -29,8 +29,8 @@ $('#removeComplete').click(function(){
       return false;
 });
 
-$('.items').click(function() {
-  $(this).toggleClass('completed');
+$('.theList').on("click", "li", function() {
+ $(this).toggleClass('completed');
 });
 
 $('#newItem').keypress(function(event){

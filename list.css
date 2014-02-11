@@ -1,4 +1,3 @@
-
 #newItem{
 	width: 400px;
 }
@@ -31,6 +30,7 @@ ul{
   color: red;
   display: none;
   border: 1px solid red;
+  width: 400px;
   border-radius: 10px;
   text-align: center;
   

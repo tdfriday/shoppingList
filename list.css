@@ -21,7 +21,7 @@ ul{
 	text-decoration: line-through;
 	display: block;
 	width: 400px;
-	border: 1px solid dashed;
+	border: 1px dashed black;
 	background-color: #ffffff;
 	padding: 5px;
 	margin: 3px;

@@ -10,6 +10,7 @@ function addItem(){
      console.log(newItem);
     if (newItem === ""){
    alert("Please enter something");
+   $('#newItem')[0].focus();
    }
    else {
    $('.theList').append('<li class="items">' + newItem + '</li>');

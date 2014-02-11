@@ -1,37 +1,33 @@
 $(document).ready(function(){
    $('#submit').click(function(){
       addItem();
-      return false;
 });
 
 
 function addItem(){
     var newItem = $('#newItem').val().trim();
-     console.log(newItem);
-    if (newItem === ""){
-   alert("Please enter something");
-   $('#newItem')[0].focus();
+        console.log(newItem);
+   if (newItem === ""){
+      alert("Please enter something");
+      $('#newItem')[0].focus();
    }
-   else {
-   $('.theList').append('<li class="items">' + newItem + '</li>');
-    $('#newItem').val("");
+   else
+   {
+      $('.theList').append('<li class="items">' + newItem + '</li>');
+      $('#newItem').val("");
    }
-   return false;
    }
-
 
 $('#clearAll').click(function(){
       $('.theList').empty();
-      return false;
 });
 
 $('#removeComplete').click(function(){
       $('.completed').remove();
-      return false;
 });
 
 $('.theList').on("click", "li", function() {
- $(this).toggleClass('completed');
+       $(this).toggleClass('completed');
 });
 
 $('#newItem').keypress(function(event){
@@ -39,6 +35,6 @@ $('#newItem').keypress(function(event){
       $("#submit").click();
       return false;
     }
-    });
+});
 
 });

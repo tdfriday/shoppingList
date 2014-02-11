@@ -17,6 +17,8 @@ ul{
 	list-style: none;
 }
 .completed{
+    color: red;
+    font-style: italic;
 	text-decoration: line-through;
 	display: block;
 	width: 400px;
@@ -24,4 +26,12 @@ ul{
 	background-color: #ffffff;
 	padding: 5px;
 	margin: 3px;
+}
+#alert{
+  color: red;
+  display: none;
+  border: 1px solid red;
+  border-radius: 10px;
+  text-align: center;
+  
 }
